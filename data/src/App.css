@@ -1,0 +1,116 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container styling */
+div {
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Navigation buttons container */
+nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  margin: 2%;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #42a369;
+}
+
+/* Back Button styling */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Back Button hover effect */
+.back-button:hover {
+  background-color: #42a369;
+}
+
+/* Link styling */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Page Content Styling */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #4CAF50;
+  color: rgb(10, 7, 7);
+}
+
+tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

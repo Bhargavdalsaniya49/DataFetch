@@ -1,0 +1,49 @@
+.table-container {
+  margin: 20px;
+}
+
+.search-container {
+  margin-bottom: 15px;
+}
+
+.search-container input {
+  padding: 8px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.search-container button {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+}

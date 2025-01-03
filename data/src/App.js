@@ -1,6 +1,4 @@
-
-
-import React, { useState } from 'react';
+import React from 'react';
 import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 import UsersPage from '../src/product/UserTable';
 import QuotesPage from '../src/product/QuotesPage';
@@ -9,21 +7,12 @@ import PostPage from '../src/product/PostsTable';
 import './App.css';
 
 const App = () => {
-  const [searchId, setSearchId] = useState('');
   const navigate = useNavigate();
-
-  const handleSearch = () => {
-    if (!searchId.trim()) {
-      alert('Please enter an ID to search');
-      return;
-    }
-    console.log(`Searching for ID: ${searchId}`);
-  };
 
   return (
     <div>
-       {/* Back Button */}
-       <button className="back-button" onClick={() => navigate(-1)}>
+      {/* Back Button */}
+      <button className="back-button" onClick={() => navigate(-1)}>
         ← Back
       </button>
 
@@ -42,13 +31,6 @@ const App = () => {
           <button>
             <Link to="/posts"> Posts</Link>
           </button>
-          <input
-            type="text"
-            placeholder="Search by ID"
-            value={searchId}
-            onChange={(e) => setSearchId(e.target.value)}
-          />
-          <button onClick={handleSearch}>Search</button>
         </div>
       </nav>
       <Routes>
@@ -62,3 +44,6 @@ const App = () => {
 };
 
 export default App;
+
+
+

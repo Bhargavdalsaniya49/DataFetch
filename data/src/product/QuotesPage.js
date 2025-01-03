@@ -1,53 +1,4 @@
-// import React, { useEffect, useState } from 'react';
 
-// const QuotesPage = () => {
-//   const [quotes, setQuotes] = useState([]);
-//   const [loading, setLoading] = useState(true);
-
-//   useEffect(() => {
-//     // Fetch quotes data
-//     fetch('https://dummyjson.com/quotes')
-//       .then((response) => response.json())
-//       .then((data) => {
-//         setQuotes(data.quotes);
-//         setLoading(false);
-//       })
-//       .catch((error) => {
-//         console.error("Error fetching data:", error);
-//         setLoading(false);
-//       });
-//   }, []);
-
-//   if (loading) {
-//     return <p>Loading data...</p>;
-//   }
-
-//   return (
-//     <div>
-//       <h2>Quotes Data</h2>
-//       <table border="1" cellPadding="10">
-//         <thead>
-//           <tr>
-//             <th>ID</th>
-//             <th>Quote</th>
-//             <th>Author</th>
-//           </tr>
-//         </thead>
-//         <tbody>
-//           {quotes.map((quote) => (
-//             <tr key={quote.id}>
-//               <td>{quote.id}</td>
-//               <td>{quote.quote}</td>
-//               <td>{quote.author}</td>
-//             </tr>
-//           ))}
-//         </tbody>
-//       </table>
-//     </div>
-//   );
-// };
-
-// export default QuotesPage;
 import React, { useState, useEffect } from 'react';
 
 const QuotesPage = () => {
@@ -78,7 +29,7 @@ const QuotesPage = () => {
   return (
     <div>
       <h2>Quotes</h2>
-      {/* <div>
+      <div>
         <input
           type="text"
           placeholder="Search by ID"
@@ -86,7 +37,7 @@ const QuotesPage = () => {
           onChange={(e) => setSearchId(e.target.value)}
         />
         <button onClick={handleSearch}>Search</button>
-      </div> */}
+      </div>
       <table border="1" cellPadding="10">
         <thead>
           <tr>
